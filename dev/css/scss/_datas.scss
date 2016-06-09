@@ -1,0 +1,11 @@
+$color: red;
+
+input{
+	background-color: green;
+}
+
+@mixin border-radius($radias){
+	-webkit-border-radius: $radias;
+	-ms-border-radius: $radias;
+	border-radius: $radias;
+}

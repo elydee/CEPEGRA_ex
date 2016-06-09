@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "description": "firstproject",
+  "main": "bower",
+  "authors": [
+    "mpalau"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "jqueryui#^1.11.4",
+    "jquery": "^2.2.3",
+    "modernizer": "^2.8.2",
+    "animate.css": "latest"
+  }
+}

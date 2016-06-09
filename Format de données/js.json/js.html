@@ -1,0 +1,144 @@
+<script>
+	myObject = {
+		'name': 'Palau',
+		'firstname': 'Maxime',
+		'age': 23,
+		'inscription': true,
+		'salary': 9999.99,
+		'kind': 'M',
+		'contact': [
+			{ 'type': 'gsm', 'num': '0493 02 10 98' },
+			{ 'type': 'tel', 'num': null }
+		]
+	};
+
+	// En json, l'on doit mettre tous les éléments objet sous quotes. On peut retrouver des objets dans des tableaux, le tableau se charge du listing d'élément et l'objet nous permet de stocker la propriété liée à la valeur
+
+	// alert(myObject.name + ' ' + myObject.kind + ' ' + myObject.contact[0].num);
+
+	myPersonel = [
+		{
+			'name': 'Dickinson',
+			'firstname': 'Elisabeth',
+			'birthdate': '1990-11-22',
+			'genre': 'Female', 
+			'childs': [
+				{
+					'name': 'Poppins',
+					'firstname': 'Mary',
+					'birthdate': '1990-11-22'
+				}, {
+					'name': 'Frankenstein',
+					'firstname': 'Victor',
+					'birthdate': '1990-11-22'
+				}
+			]
+		}, {
+			'name': 'Roberts',
+			'firstname': 'Julia',
+			'birthdate': '1990-11-22',
+			'genre': 'Female', 
+			'childs': [
+				{
+					'name': 'Georges',
+					'firstname': 'Henry',
+					'birthdate': '1990-11-22'
+				}
+			]
+		}, {
+			'name': 'Arrotin',
+			'firstname': 'Alineuh',
+			'birthdate': '1990-11-22',
+			'genre': 'Male', 
+			'childs': [
+				{
+					'name': 'Dufroc',
+					'firstname': 'Claudine',
+					'birthdate': '1990-11-22'
+				}, {
+					'name': 'Tuche',
+					'firstname': 'Kévin',
+					'birthdate': '1990-11-22'
+				}, {
+					'name': 'Tuche',
+					'firstname': 'Bryan',
+					'birthdate': '1990-11-22'
+				}
+			]
+		},
+	];
+	// alert(myPersonel[2].name + ' ' + myPersonel[2].firstname);
+
+	carnet = {
+		"propriétaire": {
+			"name": "Palau",
+			"firstname": "Maxime",
+			"birthdate": "1993-04-01",
+			"address": {
+				"street": "Rue du Bassin",
+				"number": 4,
+				"zip": 4800,
+				"city": "Ensival"
+			},
+			"contact": [
+				{ "type": "gsm", "join": "0493 02 10 98" }, 
+				{ "type": "mail", "join": "maxime-palau@hotmail.com" }
+			]
+		},
+		"contacts": [
+			{
+			"name": "Dickinson",
+			"firstname": "Elisabeth",
+			"birthdate": "1990-11-22",
+			"address": [{
+				"street": "Rue du Pouet",
+				"number": 36,
+				"zip": 4000,
+				"city": "Liège"
+			}],
+			"contact": [
+				{ "type": "gsm", "join": "0498 22 36 94" }, 
+				{ "type": "mail", "join": "pouetme@hotmail.com" }
+			]
+			}, {
+			"name": "Arrotin",
+			"firstname": "Aline",
+			"birthdate": "1910-11-22",
+			"address": [{
+				"street": "Rue de la chaudière",
+				"number": 69,
+				"zip": 6969,
+				"city": "Dépravacity"
+			}],
+			"contact": [
+				{ "type": "gsm", "join": "0496 69 69 69" }, 
+				{ "type": "mail", "join": "touch@hotmail.com" }
+			]
+			}, {
+			"name": "Po",
+			"firstname": "Pauline",
+			"birthdate": "1999-11-22",
+			"address": [{
+				"street": "Rue de la fumette",
+				"number": 11,
+				"zip": 6000,
+				"city": "Provinbourg"
+			}, {
+				"street": "Rue de la Bourgeoisie",
+				"number": 1,
+				"zip": 6000,
+				"city": "Provinbourg"
+			}],
+			"contact": [
+				{ "type": "gsm", "join": "0496 69 93 66" }, 
+				{ "type": "mail", "join": "bourgeoisie@hotmail.com" }
+			]
+			}
+		]
+	};
+
+	var test = carnet.contacts[2].address[1];
+
+	alert(test.street + ' ' + test.number + ' ' + test.city);
+</script>
+

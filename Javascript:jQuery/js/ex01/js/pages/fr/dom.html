@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr" >
+  <head>
+  <meta charset="utf-8">
+  <title>Le DOM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+	<meta name="keywords" content="Web,HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Site Web bla bla bla" />
+	<meta name="author" content="Mumu" />
+	<link href="../../style/css/normalize.min.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/main.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/printer.css" rel="stylesheet" media="print" />
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="../../js/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body id="dom" >
+	<div id="container">
+		<header>
+			<div id="search-lang" >
+				<nav role="navigation" id="lang">
+					<a href="../en/dom.html" lang="en" >EN</a>
+					<a href="#">FR</a>
+					<a href="../nl/dom.html" lang="nl" >NL</a>
+				</nav>
+				<form role="search" id="search" >
+					<label for="search"><input type="search" id="search" placeholder="Search" /></label>
+					<button type="button">Search</button>
+				</form>
+			</div>
+			<p role="banner" >Bienvenue, Welcome, Wilkommen</p>
+			<nav role="navigation" id="nav-site">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="manip.html">Manip</a></li>
+					<li><a href="#">DOM</a></li>
+					<li><a href="event.html">Event</a></li>
+					<li><a href="table.html" >Table</a></li>
+					<li><a href="form.html">Formulaire</a></li>	
+				</ul>
+			</nav>									
+		</header>
+			<main role="main" >
+				<header>
+						<h1>DOM</h1>						
+						<p>Le Document Object Model</p>
+				</header>
+				<aside role="complementary">
+				</aside>
+				<nav id="nav-page">
+					<h2>Table des Matières</h2>
+				  <ul>
+						<li><a href="#intro">Intro</a> </li>
+						<li><a href="#chap1">Chap.1</a> 
+							<ul>
+								<li><a href="#1A">§ 1A</a></li>
+								<li><a href="#1B">§ 1B</a></li>
+							</ul>
+						</li>
+						<li><a href="#chap2">Chap.2</a> 
+							<ul>
+								<li><a href="#2A">§ 2A</a></li>
+								<li><a href="#2B">§ 2B</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>		
+				<section id="subject" >
+					<div id="intro" >
+			       		<h2> Introduction </h2>
+			       		<p> Lorem ipsum Intro... </p>
+		           	</div><!-- 	End #intro 				-->
+		           	<div id="chap1" >
+			           	<h2> Chapitre 1 </h2>
+			           	<p> Lorem ipsum Intro Chap 1... </p>
+			           	<h3 id="1A">§ 1A</h3>
+			           	<p> Lorem ipsum Intro § 1A... </p>
+			           	<p> Lorem ipsum Contenu 1A...  </p>
+			           	<h3 id="1B">§ 1B</h3>
+			           	<p> Lorem ipsum Intro § 1B... </p>
+			           	<p> Lorem ipsum Contenu 1B...  </p>
+		           	</div><!-- 	End #chap1 				-->
+		           	<div id="chap2" >
+			           	<h2> Chapitre 2 </h2>
+			           	<p> Lorem ipsum Intro Chap 2... </p>
+			           <h3 id="2A">§ 2A</h3>
+			           	<p> Lorem ipsum Intro § 2A... </p>
+			           	<p> Lorem ipsum Contenu 2A...  </p>
+			           	<h3 id="2B">§ 2B</h3>
+			           	<p> Lorem ipsum Intro § 2B... </p>
+			           	<p> Lorem ipsum Contenu 2B...  </p>
+			        </div><!-- 	End #chap2 				-->
+   				</section><!-- 	End section #subject 			-->
+			</main>
+			<footer role="contentinfo">
+				<p>Contact</p>
+				<p>Powered By µ² from ITacWorld</p>
+			</footer>
+		</div>
+	  <script src="../../js/main.js"></script>
+		<script src="../../js/dom.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

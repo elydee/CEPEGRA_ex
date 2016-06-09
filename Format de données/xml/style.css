@@ -1,0 +1,45 @@
+*{
+	display:block;
+	box-sizing: border-box;
+}
+contact{
+	display: block;
+	width: 450px;
+	height: 250px;
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+	padding-top: 25px;
+	padding-left: 150px;
+	-webkit-box-shadow: 10px 10px 29px 0px rgba(222,222,222,0.54);
+	-moz-box-shadow: 10px 10px 29px 0px rgba(222,222,222,0.54);
+	box-shadow: 10px 10px 29px 0px rgba(222,222,222,0.54);
+}
+
+person{
+	display: block;
+	width: 250px;
+	height: 200px;
+	margin-left: 25px;
+}
+
+contact::before{
+	content: '';
+	display: block;
+	width: 150px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: lightgrey;
+	background-image: url(http://placekitten.com/g/200/300);
+	
+}
+
+/*institutes:library{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}*/
+

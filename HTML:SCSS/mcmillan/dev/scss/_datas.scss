@@ -1,0 +1,18 @@
+// Variables ressources
+$boldFont: 'montserratbold';
+$regularFont: 'montserratregular';
+$width: 100%;
+$myColor1: #282C2D;
+$myColor2: #202020;
+$myColor3: #303030;
+$borderGradientColor: 2px solid #000;
+
+// Mixins ressources
+@mixin gradient($direction: top, $color1: $myColor2, $color2: $myColor3){ 
+	background-image: linear-gradient(to $direction, $color1, $color2);
+}
+
+// Variables callBack
+ 
+
+// Mixins callBack

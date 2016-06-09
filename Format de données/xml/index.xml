@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<!DOCTYPE root [
+	<!ELEMENT root (person:contact)>
+	<!ELEMENT person:contact (person+)>
+	<!ELEMENT person (name, firstname, address)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT firstname (#PCDATA)>
+	<!ELEMENT address (street, number, zip, city)>
+	<!ELEMENT street (#PCDATA)>
+	<!ELEMENT number (#PCDATA)>
+	<!ELEMENT zip (#PCDATA)>
+	<!ELEMENT city (#PCDATA)>
+	<!ATTLIST person
+		id CDATA #REQUIRED
+	>
+	<!ATTLIST address
+		id CDATA #REQUIRED
+	>
+	<!ATTLIST city
+		id CDATA #REQUIRED
+	>
+]>
+<root xmlns:person="http://localhost/phpmyadmin">
+	<person:contact>
+		<person id="1">
+			<name>Palau</name>
+			<firstname>Maxime</firstname>
+			<address id="1">
+				<street>Rue du bassin</street>
+				<number>4</number>
+				<zip>4800</zip>
+				<city id="1">Ensival</city>
+			</address>
+		</person>
+	</person:contact>
+	
+</root>

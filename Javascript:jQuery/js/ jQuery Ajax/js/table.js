@@ -1,0 +1,1 @@
+$('#listTable tbody').load('../data/texte/tab_people.html');

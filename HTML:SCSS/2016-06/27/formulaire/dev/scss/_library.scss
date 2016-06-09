@@ -1,0 +1,184 @@
+//pxToEM
+
+@mixin pxToEm-fontSize($size){
+	$resultSize: ($size/16)*1em;
+	font-size: $resultSize;
+}
+
+@mixin pxToEm-lineHeight($size){
+	$resultSize: ($size/16)*1em;
+	line-height: $resultSize;
+}
+
+@mixin pxToEm-width($size){
+	$resultSize: ($size/16)*1em;
+	width: $resultSize;
+}
+
+@mixin pxToEm-height($size){
+	$resultSize: ($size/16)*1em;
+	height: $resultSize;
+}
+
+@mixin pxToEm-margin($size){
+	$resultSize: ($size/16)*1em;
+	margin: $resultSize;
+}
+
+@mixin pxToEm-marginTop($size){
+	$resultSize: ($size/16)*1em;
+	margin-top: $resultSize;
+}
+
+@mixin pxToEm-marginLeft($size){
+	$resultSize: ($size/16)*1em;
+	margin-left: $resultSize;
+}
+
+@mixin pxToEm-marginRight($size){
+	$resultSize: ($size/16)*1em;
+	margin-right: $resultSize;
+}
+
+@mixin pxToEm-marginBottom($size){
+	$resultSize: ($size/16)*1em;
+	margin-bottom: $resultSize;
+}
+
+@mixin pxToEm-padding($size){
+	$resultSize: ($size/16)*1em;
+	padding: $resultSize;
+}
+
+@mixin pxToEm-paddingTop($size){
+	$resultSize: ($size/16)*1em;
+	padding-top: $resultSize;
+}
+
+@mixin pxToEm-paddingLeft($size){
+	$resultSize: ($size/16)*1em;
+	padding-left: $resultSize;
+}
+
+@mixin pxToEm-paddingRight($size){
+	$resultSize: ($size/16)*1em;
+	padding-right: $resultSize;
+}
+
+@mixin pxToEm-paddingBottom($size){
+	$resultSize: ($size/16)*1em;
+	padding-bottom: $resultSize;
+}
+
+@mixin pxToEm-top($size){
+	$resultSize: ($size/16)*1em;
+	top: $resultSize;
+}
+
+@mixin pxToEm-left($size){
+	$resultSize: ($size/16)*1em;
+	left: $resultSize;
+}
+
+@mixin pxToEm-right($size){
+	$resultSize: ($size/16)*1em;
+	right: $resultSize;
+}
+
+@mixin pxToEm-bottom($size){
+	$resultSize: ($size/16)*1em;
+	bottom: $resultSize;
+}
+
+ 
+//pxToRem
+
+@mixin pxToRem-fontSize($size){
+	$resultSize: ($size/16)*1rem;
+	font-size: $resultSize;
+}
+
+@mixin pxToRem-lineHeight($size){
+	$resultSize: ($size/16)*1rem;
+	line-height: $resultSize;
+}
+
+@mixin pxToRem-width($size){
+	$resultSize: ($size/16)*1rem;
+	width: $resultSize;
+}
+
+@mixin pxToRem-height($size){
+	$resultSize: ($size/16)*1rem;
+	height: $resultSize;
+}
+
+@mixin pxToRem-margin($size){
+	$resultSize: ($size/16)*1rem;
+	margin: $resultSize;
+}
+
+@mixin pxToRem-marginTop($size){
+	$resultSize: ($size/16)rem;
+	margin-top: $resultSize;
+}
+
+@mixin pxToRem-marginLeft($size){
+	$resultSize: ($size/16)rem;
+	margin-left: $resultSize;
+}
+
+@mixin pxToRem-marginRight($size){
+	$resultSize: ($size/16)rem;
+	margin-right: $resultSize;
+}
+
+@mixin pxToRem-marginBottom($size){
+	$resultSize: ($size/16)rem;
+	margin-bottom: $resultSize;
+}
+
+@mixin pxToRem-padding($size){
+	$resultSize: ($size/16)*1rem;
+	padding: $resultSize;
+}
+
+@mixin pxToRem-paddingTop($size){
+	$resultSize: ($size/16)*1rem;
+	padding-top: $resultSize;
+}
+
+@mixin pxToRem-paddingLeft($size){
+	$resultSize: ($size/16)*1rem;
+	padding-left: $resultSize;
+}
+
+@mixin pxToRem-paddingRight($size){
+	$resultSize: ($size/16)*1rem;
+	padding-right: $resultSize;
+}
+
+@mixin pxToRem-paddingBottom($size){
+	$resultSize: ($size/16)*1rem;
+	padding-bottom: $resultSize;
+}
+
+@mixin pxToRem-top($size){
+	$resultSize: ($size/16)*1rem;
+	top: $resultSize;
+}
+
+@mixin pxToRem-left($size){
+	$resultSize: ($size/16)*1rem;
+	left: $resultSize;
+}
+
+@mixin pxToRem-right($size){
+	$resultSize: ($size/16)*1rem;
+	right: $resultSize;
+}
+
+@mixin pxToRem-bottom($size){
+	$resultSize: ($size/16)*1rem;
+	bottom: $resultSize;
+}

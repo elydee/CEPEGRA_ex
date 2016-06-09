@@ -1,0 +1,58 @@
+.navbar{
+	width: $width;
+	background-color: red; 
+
+	h1{
+		display: block;
+ 		width: $width;
+ 		height: auto;
+ 		background-color: $myColor1;
+ 		margin: 0;
+ 		padding: 10px;
+
+ 		.logo{
+			font-size: 0; 
+ 		}
+
+ 		img[alt=McMillan]{
+ 			width: 150px;
+ 		}
+	}
+
+	.navbar-nav{
+		//background-image: linear-gradient(to bottom, hsl(0, 80%, 70%), #bada55);
+		@include gradient(bottom);
+		border-top: $borderGradientColor;
+
+		ul{
+			display: flex;
+			flex-direction: row;
+			width: 90%;
+			height: 60px;
+			margin: auto;
+
+			li{
+				flex-grow: 1;
+				height: 100%;
+				margin-left: 2px;
+				margin-right: 2px;
+				list-style-type: none;
+			}
+		}
+
+		a{
+			display: block;
+			width: $width;
+			height: 100%;
+			font-family: 'arial', sans-serif;
+			line-height: 40px;
+			text-decoration: none;
+			text-align: center;
+			color: white;
+
+			&:hover{
+				background-color: red;
+			}
+		}
+	}
+}

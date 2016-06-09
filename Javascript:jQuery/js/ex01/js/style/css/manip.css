@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */	
+	
+canvas {
+	display: block;
+	width: 600px;
+	height: 350px;
+	margin: 0 auto ;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color:RGB(232,232,232);
+}
+
+aside {
+	font-size: 2em;
+}

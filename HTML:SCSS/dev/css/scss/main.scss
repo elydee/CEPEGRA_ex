@@ -1,0 +1,33 @@
+@import 'datas';
+/* @import 'reset'; */  
+
+body{
+	background-color: $color;
+}
+
+.important{ 
+	background-color: $color;
+}
+
+nav{
+
+	ul{
+		list-style-type: none;
+
+	}
+}
+
+.message{
+	color: blue;
+	padding: 5px;
+	border: 1px solid blue;
+}
+
+.success{
+	@extend .message;
+	border-color: green;
+}
+
+*{
+	background-color: blue; 
+}

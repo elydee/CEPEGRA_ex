@@ -1,0 +1,109 @@
+
+.forms-inscription{
+	@include pxToRem-width(400);
+	//width: 500px;
+	@include pxToEm-padding(50);
+	margin: auto;
+	padding: auto;
+	background-color: $colorOne;
+
+	form>div{
+		position: relative;
+		@include pxToEm-height(100);
+		@include pxToEm-marginBottom(25);
+		//background-color: red;
+ 
+		&:last-of-type{
+			@include pxToEm-marginBottom(40);
+		}
+	}
+
+	label{
+		position: absolute;
+		top: 0;
+		@include pxToEm-paddingTop(8);
+		@include pxToEm-paddingLeft(8);
+		@include pxToEm-fontSize(20);
+		filter: blur(0);
+		transition: filter .5s ease-in-out;
+
+
+	}
+
+	.icon-style{
+		position: relative;
+		@include pxToEm-marginRight(5);
+		color: red;
+		filter: none;
+		content: '\e5000';
+		font-family: 'icomoon';
+		animation: icon 1s infinite;
+	}
+
+	.masque{
+		display: none;
+	}
+
+	@keyframes icon{
+		0%{
+			@include pxToEm-top(0);
+		} 50% {
+			@include pxToEm-top(-10);
+		} 100% {
+			@include pxToEm-top(0);
+		}
+	}
+
+	input[type=text], input[type=email], input[type=tel]{
+		display: block;
+		width: $width; 
+		@include pxToEm-height(40);
+		@include pxToEm-paddingLeft(8);
+		position: absolute;
+		@include pxToEm-top(0);
+		border-top: none;
+		border-left: none; 
+		border-right: none;
+		border-bottom: 1px solid black;
+		background: none;
+		outline: none;
+
+		&::placeholder{
+			color: transparent;
+		}
+	}
+
+	input:focus + label{ 
+		filter: blur(50px);
+
+		
+	}
+
+	input:focus{
+
+		&::placeholder{
+			color: black;
+			transition: color .5s ease-in-out;
+		}
+	}
+
+	button[type=submit]{
+		display: block;
+		width: $width/2;
+		@include pxToEm-height(40);
+		margin: auto;
+		@include pxToEm-marginBottom(20);
+		@include buttons-01(#1CE);
+
+		&:last-of-type{
+			margin-bottom: 0;
+			@include buttons-01(#FECA1E);
+		}
+
+	}
+}
+
+
+
+
+

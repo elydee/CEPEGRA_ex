@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr" >
+  <head>
+  <meta charset="utf-8">
+  <title>Manipulation JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+	<meta name="keywords" content="Web,HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Site Web bla bla bla" />
+	<meta name="author" content="Mumu" />
+	<link href="../../style/css/normalize.min.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/main.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/manip.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/table.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/printer.css" rel="stylesheet" media="print" />
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="../../js/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body id="manip">
+	<div id="container">
+		<header>
+			<div id="search-lang" >
+				<nav role="navigation" id="lang">
+					<a href="../en/manip.html" lang="en" >EN</a>
+					<a href="#">FR</a>
+					<a href="../nl/manip.html" lang="nl" >NL</a>
+				</nav>
+				<form role="search" id="search" >
+					<label for="search"><input type="search" id="search" placeholder="Search" /></label>
+					<button type="button">Search</button>
+				</form>
+			</div>
+			<p role="banner" >Bienvenue, Welcome, Wilkommen</p>
+			<nav role="navigation" id="nav-site">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Manip</a></li>
+					<li><a href="dom.html">DOM</a></li>
+					<li><a href="event.html">Event</a></li>
+					<li><a href="table.html" >Table</a></li>
+					<li><a href="form.html">Formulaire</a></li>	
+				</ul>
+			</nav>						
+		</header>
+		<main role="main" >
+			<header>
+				<h1>JavaScript</h1>
+				<p>Exemples pratiques</p>
+			</header>
+			<section id="subject">
+				<div class="box hidden" >
+				  <h2>Alerte</h2>
+				  <p class="legend">petit texte</p>
+					<input type="text"  id="data" name="data" value=""  />
+				</div><!-- 	End .box 		-->	
+				<h2>Tableau des résultats</h2>
+				<table class="table" id="dataTable">
+					<caption class="caption">Resultats 2013 (en €)</caption>
+					<thead>
+						<tr><th></th><th>1er Trim</th><th>2ème Trim</th><th>3ème Trim</th><th>4ème Trim</th></tr>
+					</thead>
+					<tfoot>
+						<tr class="total"><th>Total</th><td>0000</td><td>0000</td><td>0000</td><td>0000</td></tr>
+						<tr><td class="lastfoot" colspan="5" ><a href="#">back to the top</a></td></tr>
+					</tfoot>
+					<tbody>
+						<tr><th>Zone 1</th><td>2000</td><td>2020</td><td>2032</td><td>2030</td></tr>
+						<tr><th>Zone 2</th><td>1800</td><td>1825</td><td>1830</td><td>1830</td></tr>
+						<tr><th>Zone 3</th><td>1900</td><td>1925</td><td>1940</td><td>1930</td></tr>
+						
+					</tbody>
+				</table>
+				<h2>Graphique des résultats</h2>
+				<canvas id="result" width="600px" height="350px">
+					<img src="../photos/result2013.jpg" alt="graphique année 2013" width="481px" height="289px"/>
+				</canvas>
+				<div class="btnZone">
+					<button type="button" >Go</button>
+				</div><!-- 	End .btnZone 							-->
+			</section><!-- 	End #subject 								-->
+			</main>
+			<footer role="contentinfo">
+				<p>Contact</p>
+				<p>Powered By µ² from ITacWorld</p>
+			</footer>
+		</div><!-- 	End #container 			-->
+	<script src="../../js/main.js" ></script>
+	<script src="../../js/manip.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

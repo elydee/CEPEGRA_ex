@@ -1,0 +1,26 @@
+$width: 100%;
+
+$colorOne: #F8F8F8;
+
+@mixin buttons-01($color){
+	background-color: $color;
+	box-shadow: 0 8px 0 darken($color, 20%);
+	border: none;
+	border-radius: 5px;
+
+	&:hover{
+		background-color: darken($color, 10%);
+		box-shadow: 0 8px 0 darken($color, 30%);
+	}
+
+	&:active{
+		box-shadow: 0 5px 0px darken($color,20%);
+		position: relative;
+		top: 3px;
+	}
+
+	&:valid{
+		outline: none;
+	}
+}
+

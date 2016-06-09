@@ -1,0 +1,17 @@
+{
+  "name": "mcmillan",
+  "authors": [
+    "Maxime"
+  ],
+  "description": "project",
+  "main": "mcmillan",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
